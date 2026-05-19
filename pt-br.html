@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Guilherme Machado — Suporte de TI, Service Desk e Desenvolvimento Front-End." />
+  <meta name="author" content="Guilherme Machado" />
+  <title>Guilherme Machado | Suporte de TI & Desenvolvimento Front-End</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark portfolio-navbar">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand brand" href="#home" aria-label="Ir para o início">
+        <span>DEV</span> <strong>GuiCRM</strong>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certificações</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <div class="dropdown">
+            <button class="btn btn-language dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2 me-1"></i> PT-BR
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">English</a></li>
+              <li><a class="dropdown-item active" href="pt-br.html">Português</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-download" href="assets/Currículo-Guilherme.pdf" download>
+            <i class="bi bi-download me-2"></i>Baixar CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title brand" id="mobileMenuLabel"><span>DEV</span> <strong>GuiCRM</strong></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-grid gap-2 mobile-links">
+        <a href="#home" data-bs-dismiss="offcanvas">Início</a>
+        <a href="#about" data-bs-dismiss="offcanvas">Sobre</a>
+        <a href="#skills" data-bs-dismiss="offcanvas">Habilidades</a>
+        <a href="#projects" data-bs-dismiss="offcanvas">Projetos</a>
+        <a href="#experience" data-bs-dismiss="offcanvas">Experiência</a>
+        <a href="#certifications" data-bs-dismiss="offcanvas">Certificações</a>
+        <a href="#contact" data-bs-dismiss="offcanvas">Contato</a>
+      </div>
+      <div class="d-grid gap-2 mt-4">
+        <a class="btn btn-language" href="index.html"><i class="bi bi-globe2 me-1"></i> English</a>
+        <a class="btn btn-download" href="assets/curriculo-guilherme-machado.pdf" download><i class="bi bi-download me-2"></i>Baixar CV</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="home" class="hero-section section-border">
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="row align-items-center min-vh-100 g-5">
+          <div class="col-lg-6 col-xl-5 offset-xl-1 reveal">
+            <div class="availability-badge mb-4">
+              <span></span> Disponível para oportunidades
+            </div>
+
+            <h1 class="hero-title">
+              Guilherme<br />Machado
+            </h1>
+
+            <h2 class="hero-role gradient-text">
+              Suporte de TI | Service Desk | Desenvolvimento Front-End
+            </h2>
+
+            <p class="hero-description mt-4">
+              Estudante de Sistemas de Informação com experiência prática em suporte de TI, infraestrutura, Service Desk, Active Directory, Microsoft 365 e atendimento ao usuário. Focado em criar interfaces web limpas, responsivas e eficientes.
+            </p>
+
+            <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn btn-main"><i class="bi bi-folder2-open me-2"></i>Ver Projetos</a>
+              <a href="#contact" class="btn btn-ghost"><i class="bi bi-chat-dots me-2"></i>Entrar em Contato</a>
+              <a href="assets/curriculo-guilherme-machado.pdf" class="btn btn-ghost" download><i class="bi bi-download me-2"></i>Baixar CV</a>
+            </div>
+
+            <div class="tech-stack d-flex flex-wrap gap-2 mt-4">
+              <span><i class="fa-brands fa-html5 html"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt css"></i> CSS</span>
+              <span><i class="fa-brands fa-js js"></i> JavaScript</span>
+              <span><i class="fa-solid fa-code ts"></i> TypeScript</span>
+              <span><i class="fa-brands fa-microsoft ms"></i> Microsoft 365</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="hero-profile-card floating-card">
+              <div class="hero-media position-relative">
+                <img
+                  class="hero-video"
+                  src="assets/hero-illustration.png"
+                  alt="Ilustração de desenvolvedor"
+                />
+
+                <div class="hero-card-badge">
+                  DEV GuiCRM
+                </div>
+              </div>
+
+              <div class="hero-profile-info">
+                <img class="profile-avatar" src="assets/profile.jpeg" alt="Foto de perfil de Guilherme Machado" />
+                <div>
+                  <h2>Guilherme Machado</h2>
+                  <p><span>•</span> Paranaguá, Paraná</p>
+                </div>
+              </div>
+
+              <div class="row g-3 mt-2">
+                <div class="col-6">
+                  <div class="hero-stat-card">
+                    <strong>3+</strong>
+                    <small>anos em TI/Admin</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="hero-stat-card">
+                    <strong>5+</strong>
+                    <small>áreas técnicas</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-preview section-padding section-border">
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 offset-xl-1 reveal">
+            <div class="section-heading mini">
+              <i class="bi bi-person-fill"></i>
+              <h2>Sobre Mim</h2>
+            </div>
+            <p>
+              Sou estudante de Sistemas de Informação e profissional de TI com experiência prática em suporte técnico, infraestrutura, atendimento ao usuário e rotinas administrativas.
+            </p>
+            <p>
+              Minha trajetória em suporte de TI me ajudou a desenvolver resolução de problemas, comunicação, organização e uma visão prática das necessidades tecnológicas das empresas.
+            </p>
+            <p>
+              Atualmente estou focado em Desenvolvimento Front-End, criando interfaces responsivas e funcionais com HTML, CSS, JavaScript, TypeScript e Bootstrap.
+            </p>
+            <a href="#experience" class="btn btn-outline-clean mt-2">Mais sobre mim <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+
+          <div class="col-lg-7 col-xl-6 reveal">
+            <div class="section-heading mini">
+              <i class="bi bi-briefcase-fill"></i>
+              <h2>O que eu faço</h2>
+            </div>
+
+            <div class="row g-3 service-grid">
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-headset"></i>
+                  <h3>Suporte de TI</h3>
+                  <p>Atendimento ao usuário, diagnóstico de problemas e resolução de incidentes.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-pc-display-horizontal"></i>
+                  <h3>Service Desk</h3>
+                  <p>Experiência com rotinas de Service Desk e atendimento técnico.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-server"></i>
+                  <h3>Infraestrutura</h3>
+                  <p>Active Directory, contas, permissões e rede.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="fa-brands fa-microsoft"></i>
+                  <h3>Microsoft 365</h3>
+                  <p>Gestão de usuários, aplicações, permissões e suporte.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Desenvolvimento Front-End</h3>
+                  <p>Criação de interfaces modernas com código limpo e responsivo.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-puzzle-fill"></i>
+                  <h3>Resolução de Problemas</h3>
+                  <p>Pensamento analítico e foco em soluções eficientes.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Habilidades</span>
+          <h2 class="section-title">Competências Técnicas</h2>
+          <p class="section-text mx-auto">Principais competências usadas em suporte de TI, infraestrutura e projetos de desenvolvimento web.</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>HTML / CSS</span><strong>85%</strong><div><i style="width:85%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>JavaScript</span><strong>70%</strong><div><i style="width:70%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Bootstrap</span><strong>78%</strong><div><i style="width:78%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Suporte de TI</span><strong>90%</strong><div><i style="width:90%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Microsoft 365</span><strong>82%</strong><div><i style="width:82%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Active Directory</span><strong>76%</strong><div><i style="width:76%"></i></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding section-border">
+      <div class="container">
+        <div class="text-center mb-4 reveal">
+          <span class="section-label">Projetos</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-text mx-auto">Projetos criados para praticar interfaces responsivas, JavaScript, APIs, formulários, dashboards e soluções web reais.</p>
+        </div>
+
+        <div class="project-filters d-flex flex-wrap justify-content-center gap-2 mb-5 reveal">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="landing">Landing Pages</button>
+          <button class="filter-btn" data-filter="app">Apps JS</button>
+          <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        </div>
+
+        <div class="row g-4" id="projectsGrid">
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-tools"></i></div>
+              <span>Landing Page</span>
+              <h3>DH Manutenções</h3>
+              <p>Site empresarial responsivo para prestação de serviços, com apresentação, galeria, contato e agendamento pelo WhatsApp.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>WhatsApp</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/DH-Manutencoes/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/DH-Manutencoes" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-car-front-fill"></i></div>
+              <span>Landing Page</span>
+              <h3>Lancer Club CWB</h3>
+              <p>Página automotiva responsiva com layout escuro, galeria, carrossel de fotos, seção de eventos e navegação moderna.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>Bootstrap</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Lancer-Club-CWB/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Lancer-Club-CWB" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-buildings"></i></div>
+              <span>Landing Page</span>
+              <h3>Eckó Arquitetura</h3>
+              <p>Site institucional de arquitetura com foco em apresentação profissional, serviços, layout moderno e responsividade.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Ecko-arquitetura/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Ecko-arquitetura" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="dashboard">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-kanban"></i></div>
+              <span>Dashboard</span>
+              <h3>ServiceControl</h3>
+              <p>Dashboard de ordens de serviço com cadastro, edição, exclusão, filtros, indicadores e persistência de dados no navegador.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Dashboard-Controle-de-servicos-empresariais/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Dashboard-Controle-de-servicos-empresariais" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-bag-check"></i></div>
+              <span>JS App</span>
+              <h3>Cardápio Digital Delivery</h3>
+              <p>Cardápio digital com produtos dinâmicos, filtros, busca, carrinho, cálculo total e envio de pedido pelo WhatsApp.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Menu-Digital-e-Delivery/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Menu-Digital-e-Delivery" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+              <span>JS App</span>
+              <h3>AuthFlow</h3>
+              <p>Interface moderna de login e cadastro com validação de formulário, exibição de senha, medidor de força e tema claro/escuro.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>UI</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Authflow-Login-e-Cadastro/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Authflow-Login-e-Cadastro" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-cloud-sun"></i></div>
+              <span>API</span>
+              <h3>ClimaNow</h3>
+              <p>Aplicação de clima com busca por cidade, geolocalização, previsão semanal, dados por hora e consumo de API pública.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>API</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Clima-App/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Clima-App" target="_blank">Código</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-list-check"></i></div>
+              <span>JS App</span>
+              <h3>TaskFlow</h3>
+              <p>Lista de tarefas avançada com edição, exclusão, filtros por status, prioridade, categoria, busca e estatísticas.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Taskflow/" target="_blank">Ver Projeto</a><a href="https://github.com/devguicrm/Taskflow" target="_blank">Código</a></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 reveal">
+            <span class="section-label">Experiência</span>
+            <h2 class="section-title">Trajetória Profissional</h2>
+            <p class="section-text">Experiências que unem atendimento ao usuário, organização, infraestrutura e comunicação direta com equipes internas.</p>
+          </div>
+          <div class="col-lg-8 reveal">
+            <div class="timeline-card">
+              <div class="timeline-item">
+                <h3>Estagiário de TI — Rocha Terminais Portuários e Logística</h3>
+                <span>jun/2025 – abr/2026 • Paranaguá, PR</span>
+                <p>Atendimento Nível 1, Service Desk, Active Directory, Microsoft 365, configuração de equipamentos, redes, videoconferência, impressoras e CFTV.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Balanceiro — Delta Porto Armazenagem</h3>
+                <span>jul/2024 – abr/2025 • Paranaguá, PR</span>
+                <p>Controle operacional, pesagem de veículos, registro de dados, conferência de documentos e comunicação com motoristas e equipes internas.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Estagiário Administrativo e de TI — Prefeitura Municipal de Paranaguá</h3>
+                <span>jan/2023 – jul/2024 • Paranaguá, PR</span>
+                <p>Protocolo administrativo, atendimento ao público, sistemas internos, suporte técnico, manutenção de computadores, impressoras, hardware, software e infraestrutura.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section-padding section-border">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Formação e Certificações</span>
+          <h2 class="section-title">Aprendizado Contínuo</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-translate"></i><h3>Inglês Avançado</h3><p>Speaking First • Em andamento</p><span>Comunicação avançada com foco em tecnologia e ambientes profissionais.</span></article></div>
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-mortarboard"></i><h3>Bacharelado em Sistemas de Informação</h3><p>Grupo de Ensino ISULPAR • Em andamento</p><span>Formação acadêmica em tecnologia, sistemas, desenvolvimento e fundamentos da computação.</span></article></div>
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-patch-check"></i><h3>Desenvolvimento Web Front-End</h3><p>HTML • CSS • JavaScript • Projetos práticos</p><span>Estudos focados em páginas web, layout responsivo, interatividade e boas práticas de interface.</span></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <span class="section-label">Contato</span>
+            <h2 class="section-title">Vamos conversar?</h2>
+            <p class="section-text">Estou disponível para oportunidades em Suporte de TI, Service Desk, Infraestrutura, Estágio em TI e Desenvolvimento Front-End.</p>
+            <div class="contact-list mt-4">
+              <a href="mailto:dev.guilherme.crm@gmail.com"><i class="bi bi-envelope-at"></i>dev.guilherme.crm@gmail.com</a>
+              <a href="https://www.linkedin.com/in/guilherme-machado-990a64284" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
+              <a href="https://github.com/devguicrm" target="_blank"><i class="bi bi-github"></i>GitHub</a>
+              <a href="https://wa.me/5541996453142" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form id="contactForm" class="contact-form">
+              <h3>Envie uma mensagem</h3>
+              <div class="row g-3">
+                <div class="col-md-6"><label for="name">Nome</label><input id="name" type="text" required placeholder="Seu nome" /></div>
+                <div class="col-md-6"><label for="email">E-mail</label><input id="email" type="email" required placeholder="seuemail@exemplo.com" /></div>
+                <div class="col-12"><label for="subject">Assunto</label><select id="subject" required><option value="">Selecione...</option><option>Oportunidade de emprego</option><option>Suporte de TI</option><option>Desenvolvimento Front-End</option><option>Networking</option></select></div>
+                <div class="col-12"><label for="message">Mensagem</label><textarea id="message" rows="5" required placeholder="Escreva sua mensagem..."></textarea></div>
+                <div class="col-12"><button class="btn btn-main w-100" type="submit"><i class="bi bi-send me-2"></i>Enviar por e-mail</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© <span id="currentYear"></span> Guilherme Machado. Todos os direitos reservados.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/devguicrm" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/guilherme-machado-990a64284" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:dev.guilherme.crm@gmail.com" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up-short"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guilherme Machado portfolio — IT Support, Service Desk and Front-End Development." />
+  <meta name="author" content="Guilherme Machado" />
+  <title>Guilherme Machado | IT Support & Front-End Development</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark portfolio-navbar">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand brand" href="#home" aria-label="Go to home">
+        <span>DEV</span> <strong>GuiCRM</strong>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <div class="dropdown">
+            <button class="btn btn-language dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-globe2 me-1"></i> EN
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item active" href="index.html">English</a></li>
+              <li><a class="dropdown-item" href="pt-br.html">Português</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-download" href="assets/guilherme-machado-resume.pdf" download>
+            <i class="bi bi-download me-2"></i>Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title brand" id="mobileMenuLabel"><span>DEV</span> <strong>GuiCRM</strong></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-grid gap-2 mobile-links">
+        <a href="#home" data-bs-dismiss="offcanvas">Home</a>
+        <a href="#about" data-bs-dismiss="offcanvas">About</a>
+        <a href="#skills" data-bs-dismiss="offcanvas">Skills</a>
+        <a href="#projects" data-bs-dismiss="offcanvas">Projects</a>
+        <a href="#experience" data-bs-dismiss="offcanvas">Experience</a>
+        <a href="#certifications" data-bs-dismiss="offcanvas">Certifications</a>
+        <a href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+      </div>
+      <div class="d-grid gap-2 mt-4">
+        <a class="btn btn-language" href="pt-br.html"><i class="bi bi-globe2 me-1"></i> Português</a>
+        <a class="btn btn-download" href="assets/guilherme-machado-resume.pdf" download><i class="bi bi-download me-2"></i>Download CV</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="home" class="hero-section section-border">
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="row align-items-center min-vh-100 g-5">
+          <div class="col-lg-6 col-xl-5 offset-xl-1 reveal">
+            <div class="availability-badge mb-4">
+              <span></span> Available for opportunities
+            </div>
+
+            <h1 class="hero-title">
+              Guilherme<br />Machado
+            </h1>
+
+            <h2 class="hero-role gradient-text">
+              IT Support | Service Desk | Front-End Development
+            </h2>
+
+            <p class="hero-description mt-4">
+              Information Systems student with hands-on experience in IT support, infrastructure, Service Desk, Active Directory, Microsoft 365 and user support. Focused on building clean, responsive and efficient web interfaces.
+            </p>
+
+            <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn btn-main"><i class="bi bi-folder2-open me-2"></i>View Projects</a>
+              <a href="#contact" class="btn btn-ghost"><i class="bi bi-chat-dots me-2"></i>Contact Me</a>
+              <a href="assets/guilherme-machado-resume.pdf" class="btn btn-ghost" download><i class="bi bi-download me-2"></i>Download CV</a>
+            </div>
+
+            <div class="tech-stack d-flex flex-wrap gap-2 mt-4">
+              <span><i class="fa-brands fa-html5 html"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt css"></i> CSS</span>
+              <span><i class="fa-brands fa-js js"></i> JavaScript</span>
+              <span><i class="fa-solid fa-code ts"></i> TypeScript</span>
+              <span><i class="fa-brands fa-microsoft ms"></i> Microsoft 365</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="hero-profile-card floating-card">
+              <div class="hero-media position-relative">
+                <img
+                  class="hero-video"
+                  src="assets/hero-illustration.png"
+                  alt="Developer illustration"
+                />
+
+                <div class="hero-card-badge">
+                  DEV GuiCRM
+                </div>
+              </div>
+
+              <div class="hero-profile-info">
+                <img class="profile-avatar" src="assets/profile.jpeg" alt="Guilherme Machado profile photo" />
+                <div>
+                  <h2>Guilherme Machado</h2>
+                  <p><span>•</span> Paranaguá, Paraná</p>
+                </div>
+              </div>
+
+              <div class="row g-3 mt-2">
+                <div class="col-6">
+                  <div class="hero-stat-card">
+                    <strong>3+</strong>
+                    <small>years in IT/Admin</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="hero-stat-card">
+                    <strong>5+</strong>
+                    <small>technical areas</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-preview section-padding section-border">
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 offset-xl-1 reveal">
+            <div class="section-heading mini">
+              <i class="bi bi-person-fill"></i>
+              <h2>About Me</h2>
+            </div>
+            <p>
+              I am an Information Systems student and IT professional with practical experience in technical support, infrastructure, user assistance and administrative routines.
+            </p>
+            <p>
+              My background in IT support helped me develop strong problem-solving skills, communication, organization and a solid understanding of business technology needs.
+            </p>
+            <p>
+              I am currently focusing on Front-End Development, building responsive and functional interfaces using HTML, CSS, JavaScript, TypeScript and Bootstrap.
+            </p>
+            <a href="#experience" class="btn btn-outline-clean mt-2">More about me <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+
+          <div class="col-lg-7 col-xl-6 reveal">
+            <div class="section-heading mini">
+              <i class="bi bi-briefcase-fill"></i>
+              <h2>What I Do</h2>
+            </div>
+
+            <div class="row g-3 service-grid">
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-headset"></i>
+                  <h3>IT Support</h3>
+                  <p>User support, troubleshooting and incident resolution.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-pc-display-horizontal"></i>
+                  <h3>Service Desk</h3>
+                  <p>Experience with Service Desk routines and ITSM.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-server"></i>
+                  <h3>Infrastructure</h3>
+                  <p>Active Directory, accounts, permissions and network.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="fa-brands fa-microsoft"></i>
+                  <h3>Microsoft 365</h3>
+                  <p>User management, applications, permissions and support.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Front-End Development</h3>
+                  <p>Building modern interfaces with clean and responsive code.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <article class="feature-card">
+                  <i class="bi bi-puzzle-fill"></i>
+                  <h3>Problem Solving</h3>
+                  <p>Analytical thinking and focus on efficient solutions.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-text mx-auto">Core skills used across IT support, infrastructure and web development projects.</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>HTML / CSS</span><strong>85%</strong><div><i style="width:85%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>JavaScript</span><strong>70%</strong><div><i style="width:70%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Bootstrap</span><strong>78%</strong><div><i style="width:78%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>IT Support</span><strong>90%</strong><div><i style="width:90%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Microsoft 365</span><strong>82%</strong><div><i style="width:82%"></i></div></div></div>
+          <div class="col-md-6 col-lg-4 reveal"><div class="skill-card"><span>Active Directory</span><strong>76%</strong><div><i style="width:76%"></i></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding section-border">
+      <div class="container">
+        <div class="text-center mb-4 reveal">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-text mx-auto">Projects created to practice responsive interfaces, JavaScript, APIs, forms, dashboards and real-world web solutions.</p>
+        </div>
+
+        <div class="project-filters d-flex flex-wrap justify-content-center gap-2 mb-5 reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="landing">Landing Pages</button>
+          <button class="filter-btn" data-filter="app">JS Apps</button>
+          <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        </div>
+
+        <div class="row g-4" id="projectsGrid">
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-tools"></i></div>
+              <span>Landing Page</span>
+              <h3>DH Maintenance</h3>
+              <p>Responsive business website for a service provider, with service presentation, gallery, contact and WhatsApp scheduling.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>WhatsApp</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/DH-Manutencoes/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/DH-Manutencoes" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-car-front-fill"></i></div>
+              <span>Landing Page</span>
+              <h3>Lancer Club CWB</h3>
+              <p>Responsive automotive page with dark layout, gallery, photo carousel, events section and modern navigation.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>Bootstrap</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Lancer-Club-CWB/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Lancer-Club-CWB" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="landing">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-buildings"></i></div>
+              <span>Landing Page</span>
+              <h3>Eckó Architecture</h3>
+              <p>Institutional architecture website focused on professional presentation, services, modern layout and responsiveness.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Ecko-arquitetura/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Ecko-arquitetura" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="dashboard">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-kanban"></i></div>
+              <span>Dashboard</span>
+              <h3>ServiceControl</h3>
+              <p>Service order dashboard with registration, editing, deletion, filters, indicators and browser data persistence.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Dashboard-Controle-de-servicos-empresariais/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Dashboard-Controle-de-servicos-empresariais" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-bag-check"></i></div>
+              <span>JS App</span>
+              <h3>Digital Delivery Menu</h3>
+              <p>Digital menu with dynamic products, filters, search, cart, total calculation and WhatsApp order submission.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Menu-Digital-e-Delivery/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Menu-Digital-e-Delivery" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+              <span>JS App</span>
+              <h3>AuthFlow</h3>
+              <p>Modern login and registration interface with form validation, password toggle, strength meter and dark/light theme.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>UI</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Authflow-Login-e-Cadastro/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Authflow-Login-e-Cadastro" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-cloud-sun"></i></div>
+              <span>API</span>
+              <h3>ClimaNow</h3>
+              <p>Weather application with city search, geolocation, weekly forecast, hourly data and public API consumption.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>API</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Clima-App/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Clima-App" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="app">
+            <article class="project-card">
+              <div class="project-icon"><i class="bi bi-list-check"></i></div>
+              <span>JS App</span>
+              <h3>TaskFlow</h3>
+              <p>Advanced task list with editing, deletion, status filters, priority, category, search and statistics.</p>
+              <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>LocalStorage</b></div>
+              <div class="links"><a href="https://devguicrm.github.io/Taskflow/" target="_blank">Live Demo</a><a href="https://github.com/devguicrm/Taskflow" target="_blank">Source Code</a></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 reveal">
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">Professional Background</h2>
+            <p class="section-text">Experience combining user support, organization, infrastructure and direct communication with internal teams.</p>
+          </div>
+          <div class="col-lg-8 reveal">
+            <div class="timeline-card">
+              <div class="timeline-item">
+                <h3>IT Intern — Rocha Terminais Portuários e Logística</h3>
+                <span>Jun 2025 – Apr 2026 • Paranaguá, PR</span>
+                <p>Level 1 support, Service Desk, Active Directory, Microsoft 365, equipment setup, networks, videoconferencing, printers and CCTV.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Scale Operator — Delta Porto Armazenagem</h3>
+                <span>Jul 2024 – Apr 2025 • Paranaguá, PR</span>
+                <p>Operational control, vehicle weighing, data registration, document checking and communication with drivers and internal teams.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Administrative and IT Intern — Prefeitura Municipal de Paranaguá</h3>
+                <span>Jan 2023 – Jul 2024 • Paranaguá, PR</span>
+                <p>Administrative protocol, public service, internal systems, technical support, computer maintenance, printers, hardware, software and infrastructure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section-padding section-border">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Education & Certifications</span>
+          <h2 class="section-title">Continuous Learning</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-translate"></i><h3>Advanced English</h3><p>Speaking First • In progress</p><span>Advanced communication focused on technology and professional environments.</span></article></div>
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-mortarboard"></i><h3>Bachelor's Degree in Information Systems</h3><p>Grupo de Ensino ISULPAR • In progress</p><span>Academic background in technology, systems, development and computing fundamentals.</span></article></div>
+          <div class="col-md-4 reveal"><article class="cert-card"><i class="bi bi-patch-check"></i><h3>Front-End Web Development</h3><p>HTML • CSS • JavaScript • Practical projects</p><span>Focused on web pages, responsive layout, interactivity and interface best practices.</span></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let's talk?</h2>
+            <p class="section-text">I am available for opportunities in IT Support, Service Desk, Infrastructure, IT Internship and Front-End Development.</p>
+            <div class="contact-list mt-4">
+              <a href="mailto:dev.guilherme.crm@gmail.com"><i class="bi bi-envelope-at"></i>dev.guilherme.crm@gmail.com</a>
+              <a href="https://www.linkedin.com/in/guilherme-machado-990a64284" target="_blank"><i class="bi bi-linkedin"></i>LinkedIn</a>
+              <a href="https://github.com/devguicrm" target="_blank"><i class="bi bi-github"></i>GitHub</a>
+              <a href="https://wa.me/5541996453142" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form id="contactForm" class="contact-form">
+              <h3>Send a message</h3>
+              <div class="row g-3">
+                <div class="col-md-6"><label for="name">Name</label><input id="name" type="text" required placeholder="Your name" /></div>
+                <div class="col-md-6"><label for="email">Email</label><input id="email" type="email" required placeholder="your@email.com" /></div>
+                <div class="col-12"><label for="subject">Subject</label><select id="subject" required><option value="">Select...</option><option>Job opportunity</option><option>IT Support</option><option>Front-End Development</option><option>Networking</option></select></div>
+                <div class="col-12"><label for="message">Message</label><textarea id="message" rows="5" required placeholder="Write your message..."></textarea></div>
+                <div class="col-12"><button class="btn btn-main w-100" type="submit"><i class="bi bi-send me-2"></i>Send by Email</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© <span id="currentYear"></span> Guilherme Machado. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/devguicrm" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/guilherme-machado-990a64284" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:dev.guilherme.crm@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

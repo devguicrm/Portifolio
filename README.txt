@@ -33,6 +33,9 @@ A proposta é apresentar, de maneira clara e objetiva, minhas habilidades em des
 
 ## Projetos em destaque
 
+### Página Web - Barbearia Nutella
+Site empresarial desenvolvido para a Barbearia Nutella, com uma interface chamativa para os clientes. O site conta com opções de Login/Cadastro, agenda de horários, exposição dos produtos
+
 ### Site Empresarial - Construção, Reforma e Manutenção
 
 Site institucional desenvolvido para uma empresa fictícia/prestadora de serviços na área de construção, reformas e manutenção residencial/comercial.
